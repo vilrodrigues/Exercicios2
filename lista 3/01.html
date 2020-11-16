@@ -1,0 +1,26 @@
+<script>
+
+/* 1. Uma empresa, promotora de concursos, pretende fazer um programa para o cálculo do número de
+salas necessárias para a realização de provas. Desta forma, o algoritmo deverá receber o número total
+de candidatos e o número de pessoas que podem realizar as provas em uma mesma sala, calcular e
+escrever o número de salas necessárias. O algoritmo deverá retornar sempre um número de salas exato. */
+    
+var nPessoas,qtdPorSala,dif,salas;
+
+nPessoas = Number(prompt("Informe o total de participantes:"));
+qtdPorSala = Number(prompt("Informe quantos podem estar em um sala"));
+
+dif = nPessoas / qtdPorSala;
+    
+    if (dif != 0) {
+    salas = nPessoas / qtdPorSala;
+    
+        document.write("Serão necessárias "+Math.ceil(salas)+" salas");
+    }
+    else {
+    salas = nPessoas / qtdPorSala;
+    
+    document.write("Serão necessárias "+salas+" salas");
+    }
+
+</script>

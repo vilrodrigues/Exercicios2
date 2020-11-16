@@ -1,0 +1,21 @@
+<script>
+
+/* 5- Faça um fluxograma que calcule o lucro em reais obtido com todas as unidades de um determinado produto. O usuário
+deverá informar o nome do produto, o preço de custo, o preço de venda, e a quantidade de itens vendidos. */
+    
+var nomeProduto,
+    precoCompra,
+    precoVenda,
+    qtdVendas,
+    lucro;
+
+nomeProduto = prompt("Informe o nome do produto: ");
+precoCompra = Number(prompt("Informe o preco de compra do produto: "+nomeProduto));
+precoVenda = Number(prompt("Informe o preco de venda do produto: "+nomeProduto));
+qtdVendas = Number(prompt("Informe a quantidade de vendas do produto: "+nomeProduto));
+
+lucro = (precoVenda - precoCompra) * qtdVendas;
+
+document.write(" O lucro do produto: "+nomeProduto+" foi de R$ "+lucro);
+
+</script>

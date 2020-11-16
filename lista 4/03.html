@@ -1,0 +1,38 @@
+<script>
+   
+/* 3- Faça um programa que receba 3 notas e calcule a média ponderada (nota1=25%, nota2=30% e
+nota3=50%) e com base na média informe um conceito, conforme tabulação abaixo:
+ 0 à 49 – insuficiente
+ 50 à 64 – regular
+ 65 à 84 – bom
+ 85 à 100 – ótimo */    
+    
+var n1,
+    n2,
+    n3,
+    media;
+    
+n1 = Number(prompt("Informe a primeira nota:"));
+n2 = Number(prompt("Informe a segunda nota:"));
+n3 = Number(prompt("Informe a terceira nota:"));
+                    
+media = ((((n1*25)/100)+n1)+(((n2*30)/100)+n2)+(((n3*50)/100)+n3))/3;
+
+    if (media <= 49) {
+    
+    document.write("Sua média: "+media.toFixed(1)+" é insuficiente");
+    } 
+    else if ((media >= 50) && (media <= 64)) {
+    
+    document.write("Sua média: "+media.toFixed(1)+" é regular");
+    } 
+    else if ((media >= 65) && (media <=84)) {
+    
+    document.write("Sua média: "+media.toFixed(1)+" é boa");
+    } 
+    else if (media >= 85) {
+    
+    document.write("Sua média: "+media.toFixed(1)+" é ótima");
+    } 
+
+</script>

@@ -1,0 +1,31 @@
+<script>
+
+/* 11. Faça um programa que receba o valor de x, calcule e imprima o valor de f(x)
+o O valor de f(x) é dado pela seguinte fórmula:
+ 𝑓(𝑥) =
+5𝑥+3
+√𝑥
+2−16
+o O valor de x deve ser maior que 4 ou menor do que -4, caso contrário o cálculo não poderá ser
+feito e isto deve ser informado para o usuário.
+o Faça uso das seguintes funções do JS:
+ Math.sqrt(número)  retorna a raiz quadrada do número informado
+ Math.pow(base, expoente)  retorna a potência. */
+    
+var n,
+    x;
+
+alert(" Dada a função F(x) = 5x + 3 / √¯x^2 - 16 ");
+n = prompt("Informe o valor de X");
+
+	if ((n < 4) || (n > -4)) {
+	
+    document.write(" O cálculo não poderá ser feito, informe outro número");
+	}
+	else {
+	x = (((5 * n) + 3) / (Math.sqrt(Math.pow(n,2) - 16)));
+	
+    document.write(" O resultado do cálculo é "+x);
+	}
+	
+</script>

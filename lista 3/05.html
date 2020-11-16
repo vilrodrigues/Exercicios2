@@ -1,0 +1,25 @@
+<script>
+
+/* 5. Faça um algoritmo que receba o salário de um trabalhador e o valor total do empréstimo pretendido.
+Após a realização das leituras, deve-se calcular se é possível conceder o empréstimo ao trabalhador,
+pois somente é concedido o empréstimo se o valor solicitado for inferior 30% do seu salário. */
+    
+var salario,
+    emprestimo,
+    limite;
+
+salario = Number(prompt("Informe o seu salário: R$ "));
+emprestimo = Number(prompt("Qual o valor do empréstimo: R$ "));
+
+limite = (salario * 30) / 100;
+    
+    if (emprestimo < limite) {
+    
+    document.write("Emprestimo permitido");
+    }
+    else {
+    
+    document.write("Emprestimo negado");
+    }
+    
+</script>

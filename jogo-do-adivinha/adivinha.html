@@ -1,0 +1,65 @@
+<script src="adivinha.js"></script>
+<script>
+
+var vetorErrados = [],
+    vetorEntradas = [],
+    numSorteado = 0,
+    chances = 0,
+    cont = 0,
+    cont2 = 0,
+    cont3 = 0,
+    cont4 = 0,
+    n = 0;
+    
+    
+numSorteado = nRandom(1, 10);
+
+chances = Number(prompt("Quantas chances deseja?"));
+
+for(cont = 1; cont <= chances; cont++){
+    n = Number(prompt("Chance "+cont+" de "+chances+" \n Informe o numero: "));
+    for(cont3 = 0; cont3 <= vetorEntradas.length; cont3++){
+        if (n == vetorEntradas[cont3]){
+            alert("Numero repetido");
+            n = Number(prompt("Chance "+cont+" de "+chances+" \n Informe o numero: "));
+            
+        }
+    }
+    while((isNaN(n) || (n < 1) || (n > 10))){
+        alert("Digite um numero válido"); 
+        n = Number(prompt("Chance "+cont+" de "+chances+" \n Informe o numero: "));
+    }
+    
+    vetorEntradas[cont2] = n;
+    cont2++;
+    
+    if (n == numSorteado){
+        document.write("Voce Acertou!!! <br> O Numero sorteado foi "+numSorteado+"<br> Voce acertou na chance "+cont+"<br> Seus numero errados foram ["+vetorErrados+"]");
+        break;
+    }
+    if (n != numSorteado){
+        vetorErrados[cont4] = n;
+        cont4++;
+    }
+    if (cont == chances){
+        document.write("GAME OVER <br> O numero sorteado foi "+numSorteado+"<br> Voce usou todas as chances"+"<br>seus numeros foram ["+vetorErrados+"]");
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

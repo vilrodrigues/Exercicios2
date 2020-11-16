@@ -1,0 +1,33 @@
+<script>
+   
+/* 3. Fazer um algoritmo para calcular o reajuste do salário de um funcionário de uma determinada empresa.
+Considere que o funcionário receberá um reajuste de 25% caso seu salário seja menor que R$ 945,00.
+Se o salário for maior ou igual a R$ 945,00, mas menor que R$ 1025,00, o reajuste será de 10%. Se o
+salário for maior ou igual a R$ 1025,00, o reajuste será de 3%. */
+    
+var salario,
+    reajuste,
+    novoSalario;
+
+salario = parseFloat(prompt("Informe o seu salário bruto: R$"));
+
+    if (salario < 945) {
+        reajuste = (salario * 25) / 100;
+        novoSalario = reajuste + salario;
+        
+        document.write(" Seu reajuste é de: R$"+reajuste+"<br>Seu novo salário é: R$"+novoSalario);
+    }
+    else if ((salario >= 945) && (salario < 1025)) {
+        reajuste = (salario * 10) / 100;
+        novoSalario = reajuste + salario;
+        
+        document.write(" Seu reajuste é de: R$"+reajuste+"<br>Seu novo salário é: R$"+novoSalario);
+    }
+    else {
+        reajuste = (salario * 3) / 100;
+        novoSalario = reajuste + salario;
+        
+        document.write(" Seu reajuste é de: R$"+reajuste+"<br>Seu novo salário é: R$"+novoSalario);
+    }
+    
+</script>

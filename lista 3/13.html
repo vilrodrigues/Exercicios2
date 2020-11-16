@@ -1,0 +1,41 @@
+<script>
+
+/* 13. Faça um algoritmo que receba 3 números inteiros e os imprima em ordem crescente. */
+    
+var a,
+    b,
+    c;
+
+a = parseInt(prompt("Informe o primeiro número");
+b = parseInt(prompt("Informe o segundo número");
+c = parseInt(prompt("Informe o terceiro número");
+
+	if ((a < b) && (a < c) && (b < c)) {
+	
+    document.write(" em ordem crescente: \n"+a"\n"+b"\n"+c;
+	}
+	if ((a < b) && (a < c) && (c < b)) {
+	
+    document.write(" em ordem crescente: \n"+a"\n"+c"\n"+b;
+	}
+	if ((c < a) && (c < b) && (b < a)) {
+	
+    document.write(" em ordem crescente: \n"+c"\n"+b"\n"+a;
+	}
+	if ((c > a) && (c > b) && (a < b)) {
+	
+    document.write(" em ordem crescente: \n"+c"\n"+a"\n"+b;
+	}
+	if ((b < a) && (b < c) && (a < c)) {
+	
+    document.write(" em ordem crescente: \n"+b"\n"+a"\n"+c;
+	}if ((b < a ) && (b < c) && (c < a)) {
+	
+    document.write(" em ordem crescente: \n"+b"\n"+c"\n"+a;
+	}
+	else {
+	
+    document.write("Erro");
+	}
+	
+</script>

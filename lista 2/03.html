@@ -1,0 +1,25 @@
+<script>
+
+/* 3- Faça um fluxograma que receba como entrada o consumo de energia elétrica em Kwatts e informe o valor o valor da
+fatura. Considere que:
+a. Cada kwatt custa R$0,41
+b. Será cobrada uma taxa de iluminação pública que corresponde a 3% do valor consumido a qual deverá ser
+informada.
+c. Será cobrada uma taxa de manutenção no valor de R$1,70. */    
+    
+var consumo,
+    valorFatura,
+    valorSobreConsumo;
+    
+const valorKwatt = 0.41,
+      taxaSobreConsumo = 3,
+      taxaIluminacaoPublica = 1.70;
+    
+consumo = Number(prompt("Informe o consumo em kwatts:"));
+
+valorSobreConsumo = ((consumo * valorKwatt) * taxaSobreConsumo) / 100;
+valorFatura = ((consumo * valorKwatt) + valorSobreConsumo) + taxaIluminacaoPublica;
+
+document.write("A valor final da sua fatura é de R$"+valorFatura);
+    
+</script>

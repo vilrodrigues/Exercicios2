@@ -1,0 +1,53 @@
+<script>
+    
+/* 5- Faça um programa que receba dois números e execute as seguintes operações abaixo de acordo
+com a escolha do usuário.
+Escolha do Usuário Operação:
+1 - Média aritmética entre os valores digitados
+2 - Diferença do maior pelo menor
+3 - Produto entre os números digitados
+4 - Divisão do primeiro pelo segundo */
+    
+var n1,
+    n2,
+    op,
+    result;
+    
+n1 = Number(prompt("Informe o primero número: "));
+op = prompt("Informe a operação: \n 1 para média aritmética \n 2 para diferença do maior pelo menor \n 3 para produto entre os números \n 4 para divisão do primeiro pelo segundo");
+n2 = Number(prompt("Informe o outro número: "));
+    
+    
+    switch (op) {
+    case "1":
+    result = (n1 + n2) / 2;
+    
+    document.write(" O resultado dessa operação é: "+result);
+    break;
+            
+    case "2":
+        if (n1 > n2) {
+        result = n1 - n2;
+        
+        document.write(" O resultado dessa operação é: "+result);
+        }
+        else {
+        result = n2 - n1;
+        
+        document.write(" O resultado dessa operação é: "+result);
+        }
+    break;
+                
+    case "3":
+    result = n1 * n2;
+    
+    document.write(" O resultado dessa operação é: "+result);
+    break;
+                
+    case "4":
+    result = n1 / n2;
+    
+    document.write(" O resultado dessa operação é: "+result);
+    }
+
+</script>

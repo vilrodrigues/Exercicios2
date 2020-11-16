@@ -1,0 +1,17 @@
+<script>
+
+/* 2- Faça um fluxograma que receba como entrada o valor do salário de um funcionário e informe seu novo salário após o
+recebimento de um reajuste de 12,8%. Também deverá ser informado o valor somente do reajuste. */
+    
+var salario,
+    reajuste,
+    novoSalario;
+    
+salario = Number(prompt("Informe seu salário: "));
+    
+reajuste = (salario * 12.8) / 100;
+novoSalario = salario + reajuste;
+    
+document.write("Seu reajuste foi de R$ "+reajuste+"\n Seu novo salario é R$ "+novoSalario);
+
+</script>

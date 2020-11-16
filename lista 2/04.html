@@ -1,0 +1,28 @@
+<script>
+
+/* 4- Faça um fluxograma que receba o salário bruto de um funcionário e calcule o valor do INSS - 5%, do IR-7% e do Auxílio
+Alimentação-8% e informe os valores de cada um destes impostos/benefícios bem como o salário líquido. */
+    
+var descontoInss,
+    descontoImpostoRenda,
+    descontoAlimentacao,
+    salarioBruto,
+    salarioLiquido;
+    
+const inss = 5,
+      impostoRenda = 7,
+      alimentacao = 8;
+
+salarioBruto = Number(prompt("Informe o seu salario bruto: R$ "));
+
+descontoInss = (salarioBruto * inss) / 100;
+descontoImpostoRenda = (salarioBruto * impostoRenda) / 100;
+descontoAlimentacao = (salarioBruto * alimentacao) / 100;
+
+salarioLiquido = ((salarioBruto - descontoInss) - descontoImpostoRenda) - descontoAlimentacao;
+
+document.write("Descontos:<br><br>INSS = R$"+descontoInss+"<br>Imposto de Renda = R$"+descontoImpostoRenda+"<br>Alimentação = R$ "+descontoAlimentacao+"<br><br>Salário Líquido: R$ "+salarioLiquido);
+
+
+
+</script>

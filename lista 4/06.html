@@ -1,0 +1,49 @@
+<script>
+ 
+/* 6- Faça um programa que calcule o IMC de um paciente e que apresente o nome do paciente e sua
+faixa de risco, baseando-se na seguinte tabela:
+ 𝐼𝑀𝐶 =
+𝑝𝑒𝑠𝑜
+𝑎𝑙𝑡𝑢𝑟𝑎2
+Onde:
+ Peso é dado em quilos
+ Altura é dada em metros
+IMC Faixa de Risco
+Abaixo de 20 Abaixo do peso
+A partir de 20 até 25 Normal
+Acima de 25 até 30 Excesso de peso
+Acima de 30 até 35 Obesidade
+Acima de 35 Obesidade mórbida */
+    
+var peso,
+    altura,
+    imc;
+    
+peso = Number(prompt("Informe seu peso em Kg:"));
+altura = Number(prompt("Informe sua altura em metros:"));
+
+imc = peso / math.pow(altura,2); 
+
+
+        if (imc < 20) {
+        
+        document.write("Seu IMC é: "+imc+" Você está abaixo do peso");
+        }
+        else if ((imc >= 20) && (imc <= 25)) {
+        
+        document.write("Seu IMC é: "+imc+" Você está normal");
+        }
+        else if ((imc >= 25) && (imc <= 30)) {
+        
+        document.write("Seu IMC é: "+imc+" Você está com excesso de peso");
+        }
+        else if ((imc >= 30) && (imc <= 35)) {
+        
+        document.write("Seu IMC é: "+imc+" Você está com obesidade");
+        }
+        else if (imc > 35) {
+        
+        document.write("Seu IMC é: "+imc+" Você está com obesidade mórbida");
+        }
+    
+</script>

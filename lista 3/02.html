@@ -1,0 +1,30 @@
+<script>
+   
+/* 2. Faça um algoritmo para ler o total de uma compra e a forma de pagamento: (C) cartão e (D) dinheirocheque.
+Apresentar na saída o valor a pagar. Observação: se o pagamento for com cartão deverá ter
+um acréscimo de 2,5% caso contrário o valor permanece o mesmo. */
+    
+var valorCompra,
+    op,
+    valorFinal;
+
+valorCompra = Number(prompt("Informe o valor da compra: R$ "));
+op = prompt("Informe o método de pagamento: \n 1 para Dinheiro ou Cheque \n 2 para Cartão");
+
+    if (op == 1) {
+    
+    valorFinal = valorCompra;
+    
+    document.write("O valor final de sua compra é: R$ "+valorFinal);
+    }
+    else if (op == 2) {
+    
+    valorFinal = ((valorCompra * 2.5) / 100) + valorCompra;
+    
+    document.write("O valor final de sua compra é: R$ "+valorFinal);
+    }
+    else {
+    
+    document.write("Erro");
+    }
+</script>

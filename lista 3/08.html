@@ -1,0 +1,34 @@
+<script>
+
+/* 8. Faça um algoritmo que receba um número e informe se ele é ou não divisível por 3 e por 7.  */
+    
+var n,
+    d,
+    dd;
+ 
+ n = parseInt(prompt("Informe um número:"));
+ d = n / 3;
+ dd = n/ 7;
+ 
+    if ((d === 0) && dd === 0)) {
+    
+    document.write(" Esse número é divisivel por 3 e por 7");
+    }
+	else if ((d === 0) && (dd != 0)) {
+    
+    document.write(" Esse númer não é divisivel por 3 mas não por 7");
+    }
+	else if ((d != 0) && (dd === 0)) {
+    
+    document.write(" Esse númer não é divisivel por 7 mas não por 3");
+    }
+	else if ((d != 0) && (dd != 0)) {
+    
+    document.write(" Esse númer não é divisivel por 3 nem por 7");
+    }
+	else {
+    
+    document.write(" Erro");
+    }
+		
+</script>

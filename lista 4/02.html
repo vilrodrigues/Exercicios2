@@ -1,0 +1,51 @@
+<script>
+    
+/* 2- Faça um programa que receba 2 números quais quer e a operação desejada (+, -, *. /) e informe o
+resultado. */
+    
+var n1,
+    n2,
+    op,
+    result;
+    
+n1 = Number(prompt("Informe o primeiro número:"));
+op = prompt("Informe a operação: +(soma)\n -(subtração)\n*(multiplicação) \n /(divisão)");
+n2 = Number(prompt("Informe o segundo número:"));
+    
+    
+    switch (op) {
+        case "+":
+        case "soma":
+        case "SOMA":
+        case "Soma":
+            result = n1 + n2;
+                document.write("O resultado da operação é: "+result);
+        break;
+        case "-":
+        case "subtração":
+        case "SUBTRAÇÃO":
+        case "Subtração":
+            result = n1 - n2;
+                document.write("O resultado da operação é: "+result);
+        break;
+        case "*":
+        case "multiplicação":
+        case "MULTIPLICAÇÃO":
+        case "Multiplicação":
+            result = n1 * n2;
+                document.write("O resultado da operação é: "+result);
+        break;
+        case "/":
+        case "divisão":
+        case "DIVISÃO":
+        case "Divisão":
+            result = n1 / n2;
+                document.write("O resultado da operação é: "+result);
+        break;
+        default:
+            document.write("Erro");
+        break;
+    }
+      
+</script>
+    

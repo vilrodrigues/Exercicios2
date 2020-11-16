@@ -1,0 +1,45 @@
+<script>
+ 
+/* 4- Faça um programa que, dada a idade de um competidor de natação, classifique-o em uma das
+categorias abaixo:
+■ infantil A = de 5 à 7 anos;
+■ infantil B = de 8 à 10 anos;
+■ juvenil A = de 11 à 13 anos;
+■ juvenil B = de 14 à 17 anos;
+■ adulto = maiores que 18 anos completos;
+■ sênior = maiores que 60 anos. */
+    
+var idade;
+
+idade = parseInt(prompt("Informe sua idade"));
+    
+    if (idade < 5) {
+    
+    document.write("Sem categoria");
+    }
+    else if ((idade >= 5) && (idade <= 7)) {
+    
+    document.write("Infatil A");
+    }
+    else if ((idade >= 8) && (idade <= 10)) {
+    
+    document.write("Infatil B");
+    }
+    else if ((idade >= 11) && (idade <= 13)) {
+    
+    document.write("Juvenil A");
+    }
+    else if ((idade >= 14) && (idade <= 17)) {
+    
+    document.write("Juvenil B");
+    }
+    else if ((idade >= 18) && (idade <= 59)) {
+    
+    document.write("Adulto");
+    }
+    else if (idade >= 60) {
+    
+    document.write("Senior");
+    }
+
+</script>

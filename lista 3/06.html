@@ -1,0 +1,39 @@
+<script>
+
+ /* 6. Faça um algoritmo que simula o funcionamento de uma calculadora básica. Ele deverá receber dois
+números inteiros e a operação desejada, e na sequência retornar o resultado. */
+
+var n1,
+    n2,
+    operacao,
+    result;
+
+n1 = Number(prompt("Informe o primeiro número: "));
+operacao = prompt(" Informe a operação \n +  soma \n -  subtração \n *  multiplicação \n /  divisão ");
+n2 = Number(prompt("Informe o segundo número: "));
+
+    if ((operacao == "+") || (operacao == "soma")) {
+    result = n1 + n2;
+        
+    document.write("O resultado dessa operação é: "+result);
+    }
+    if ((operacao == "-") || (operacao == "subtração")) {
+    result = n1 - n2;
+        
+    document.write("O resultado dessa operação é: "+result);
+    }
+    if ((operacao == "*") || (operacao == "multiplicação")) {
+    result = n1 * n2;
+    
+    document.write("O resultado dessa operação é: "+result);
+    }
+    if ((operacao == "/") || (operacao == "divisão")) {
+    result = n1 / n2;
+    
+    document.write("O resultado dessa operação é: "+result);
+    }
+    else {
+    
+    document.write("Erro");
+    }
+</script>
